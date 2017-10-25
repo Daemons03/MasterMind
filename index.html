@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Master Mind</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<img src="img/ban.png">
+		<section class="disparait" id="perd">
+	</header>
+	<div id="global">	
+	</section>
+	<section id="difficulte">
+		<button name="Submit" id="bouquatreinco" type="button">Commencez</button>
+	</section>
+	<button name="Submit" id="boutregle" type="button">Règles</button>
+	<section class="disparait" id="quatreinco">
+		<h3>Partie à 4 inconnues</h3>
+		<article>
+			<img id="bleu" src="img/1.gif">
+			<img id="vert" src="img/2.gif">
+			<img id="rouge" src="img/3.gif">
+			<img id="orang" src="img/4.gif">
+			<img id="jaune" src="img/5.gif">
+			<img id="noir" src="img/6.gif">
+			<input type="Submit" id="validation2" name="valider">
+		</article>
+		<article id="p1essai1">
+			<div class="droit">
+			<img class="renouveau" id="bl1es1" src="img/vide.gif">
+			<img class="renouveau" id="bl1es2" src="img/vide.gif">
+			<img class="renouveau" id="bl1es3" src="img/vide.gif">
+			<img class="renouveau" id="bl1es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep1es1" src="img/vide.gif">
+			<img class="renouveau" id="rep1es2" src="img/vide.gif">
+			<img class="renouveau" id="rep1es3" src="img/vide.gif">
+			<img class="renouveau" id="rep1es4" src="img/vide.gif">
+			</div>
+		</article>
+		<article id="p1essai2">
+			<div class="droit">
+			<img class="renouveau" id="bl2es1" src="img/vide.gif">
+			<img class="renouveau" id="bl2es2" src="img/vide.gif">
+			<img class="renouveau" id="bl2es3" src="img/vide.gif">
+			<img class="renouveau" id="bl2es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">	
+			<img class="renouveau" id="rep2es1" src="img/vide.gif">
+			<img class="renouveau" id="rep2es2" src="img/vide.gif">
+			<img class="renouveau" id="rep2es3" src="img/vide.gif">
+			<img class="renouveau" id="rep2es4" src="img/vide.gif">
+			</div>
+		</article>
+		<article id="p1essai3">
+			<div class="droit">
+			<img class="renouveau" id="bl3es1" src="img/vide.gif">
+			<img class="renouveau" id="bl3es2" src="img/vide.gif">
+			<img class="renouveau" id="bl3es3" src="img/vide.gif">
+			<img class="renouveau" id="bl3es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">	
+			<img class="renouveau" id="rep3es1" src="img/vide.gif">
+			<img class="renouveau" id="rep3es2" src="img/vide.gif">
+			<img class="renouveau" id="rep3es3" src="img/vide.gif">
+			<img class="renouveau" id="rep3es4" src="img/vide.gif">
+			</div>
+		</article>
+		<article id="p1essai4">
+			<div class="droit">
+			<img class="renouveau" id="bl4es1" src="img/vide.gif">
+			<img class="renouveau" id="bl4es2" src="img/vide.gif">
+			<img class="renouveau" id="bl4es3" src="img/vide.gif">
+			<img class="renouveau" id="bl4es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep4es1" src="img/vide.gif">
+			<img class="renouveau" id="rep4es2" src="img/vide.gif">
+			<img class="renouveau" id="rep4es3" src="img/vide.gif">
+			<img class="renouveau" id="rep4es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai5">
+			<div class="droit">
+			<img class="renouveau" id="bl5es1" src="img/vide.gif">
+			<img class="renouveau" id="bl5es2" src="img/vide.gif">
+			<img class="renouveau" id="bl5es3" src="img/vide.gif">
+			<img class="renouveau" id="bl5es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep5es1" src="img/vide.gif">
+			<img class="renouveau" id="rep5es2" src="img/vide.gif">
+			<img class="renouveau" id="rep5es3" src="img/vide.gif">
+			<img class="renouveau" id="rep5es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai6">
+			<div class="droit">
+			<img class="renouveau" id="bl6es1" src="img/vide.gif">
+			<img class="renouveau" id="bl6es2" src="img/vide.gif">
+			<img class="renouveau" id="bl6es3" src="img/vide.gif">
+			<img class="renouveau" id="bl6es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep6es1" src="img/vide.gif">
+			<img class="renouveau" id="rep6es2" src="img/vide.gif">
+			<img class="renouveau" id="rep6es3" src="img/vide.gif">
+			<img class="renouveau" id="rep6es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai7">
+			<div class="droit">
+			<img class="renouveau" id="bl7es1" src="img/vide.gif">
+			<img class="renouveau" id="bl7es2" src="img/vide.gif">
+			<img class="renouveau" id="bl7es3" src="img/vide.gif">
+			<img class="renouveau" id="bl7es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep7es1" src="img/vide.gif">
+			<img class="renouveau" id="rep7es2" src="img/vide.gif">
+			<img class="renouveau" id="rep7es3" src="img/vide.gif">
+			<img class="renouveau" id="rep7es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai8">
+			<div class="droit">
+			<img class="renouveau" id="bl8es1" src="img/vide.gif">
+			<img class="renouveau" id="bl8es2" src="img/vide.gif">
+			<img class="renouveau" id="bl8es3" src="img/vide.gif">
+			<img class="renouveau" id="bl8es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep8es1" src="img/vide.gif">
+			<img class="renouveau" id="rep8es2" src="img/vide.gif">
+			<img class="renouveau" id="rep8es3" src="img/vide.gif">
+			<img class="renouveau" id="rep8es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai9">
+			<div class="droit">
+			<img class="renouveau" id="bl9es1" src="img/vide.gif">
+			<img class="renouveau" id="bl9es2" src="img/vide.gif">
+			<img class="renouveau" id="bl9es3" src="img/vide.gif">
+			<img class="renouveau" id="bl9es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep9es1" src="img/vide.gif">
+			<img class="renouveau" id="rep9es2" src="img/vide.gif">
+			<img class="renouveau" id="rep9es3" src="img/vide.gif">
+			<img class="renouveau" id="rep9es4" src="img/vide.gif">
+			</div>
+		</article>
+		<article id="p1essai10">
+			<div class="droit">
+			<img class="renouveau" id="bl10es1" src="img/vide.gif">
+			<img class="renouveau" id="bl10es2" src="img/vide.gif">
+			<img class="renouveau" id="bl10es3" src="img/vide.gif">
+			<img class="renouveau" id="bl10es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep10es1" src="img/vide.gif">
+			<img class="renouveau" id="rep10es2" src="img/vide.gif">
+			<img class="renouveau" id="rep10es3" src="img/vide.gif">
+			<img class="renouveau" id="rep10es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai11">
+			<div class="droit">
+			<img class="renouveau" id="bl11es1" src="img/vide.gif">
+			<img class="renouveau" id="bl11es2" src="img/vide.gif">
+			<img class="renouveau" id="bl11es3" src="img/vide.gif">
+			<img class="renouveau" id="bl11es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep11es1" src="img/vide.gif">
+			<img class="renouveau" id="rep11es2" src="img/vide.gif">
+			<img class="renouveau" id="rep11es3" src="img/vide.gif">
+			<img class="renouveau" id="rep11es4" src="img/vide.gif">	
+			</div>
+		</article>
+		<article id="p1essai12">
+			<div class="droit">
+			<img class="renouveau" id="bl12es1" src="img/vide.gif">
+			<img class="renouveau" id="bl12es2" src="img/vide.gif">
+			<img class="renouveau" id="bl12es3" src="img/vide.gif">
+			<img class="renouveau" id="bl12es4" src="img/vide.gif">
+			</div>
+			<div class="gauche">
+			<img class="renouveau" id="rep12es1" src="img/vide.gif">
+			<img class="renouveau" id="rep12es2" src="img/vide.gif">
+			<img class="renouveau" id="rep12es3" src="img/vide.gif">
+			<img class="renouveau" id="rep12es4" src="img/vide.gif">	
+			</div>
+		</article>
+	</section>
+	<section class="disparait"  id="fini">
+	</section>
+	<section class="disparait" id="regle">
+		<p>Règles de jeu:</p>
+		<ul>
+			<li>La partie se joue en 12 essais.</li>
+			<li>Les pions noirs signifie qu'une couleur est au bonne endroit.</li>
+			<li>Les pions blanc signifie qu'une couleur est mal placé.</li>
+			<li>La même couleur peut être présente plusieurs fois.</li>
+		</ul>
+	</section>
+	</div>
+	<footer>
+		<button name="Submit" class="disparait" id="rejouer" type="button">Rejouer</button>
+		<p>Jeu du Master Mind réalisé par Dagnière Maxime lors de la formation Aformac.</p>
+		<p>©FatalError-2017</p>
+	</footer>
+</body>
+</html>

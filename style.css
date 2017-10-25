@@ -1,0 +1,90 @@
+html{
+	width: 100%;
+	background: url(img/fond.jpg);
+	background-repeat: repeat;
+}
+body{
+	text-align: center;
+	margin: auto;
+	width: 960px;
+	border: 10px double;
+}
+header{
+	width: 960px;
+}
+#difficulte{
+	margin-top: 20%;
+}
+footer{
+	margin-top: 10%;
+}
+#regle{
+	width: 400px;
+    height: 200px;
+    background: grey;
+    font-weight: bold;
+    font-color: white;
+    z-index: 9999;
+    position: fixed;
+    top: 20%;
+    left: 3%;
+    text-align: left;
+    border-radius: 10px;
+}
+#fini{
+	width: 200px;
+    height: 50px;
+    background: grey;
+    font-weight: bold;
+    font-color: white;
+    z-index: 9999;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+    border-radius: 10px;
+}
+#rejouer{
+	z-index: 9999;
+    position: fixed;
+    top: 38%;
+    left: 45%;
+    text-align: center;
+    border-radius: 10px;
+}
+#regle p{
+	text-align: center;
+}
+#quatreinco{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	margin-top: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-image: url(img/fond3.jpg);
+}
+#boutregle{
+	z-index: 9999;
+    position: fixed;
+    top: 15%;
+    left: 3%;
+    border-radius: 10px;
+}
+.droit{
+	display: inline-block;
+}
+.gauche{
+	display: inline-block;
+	margin-left: 2%;
+}
+#perd{
+	background-image: url(img/gameover.jpg);
+	width: 960px;
+	height: 540px;
+	margin-top: 2%;
+}
+/* Classe spéciale*/
+.disparait{
+	display: none;
+}
